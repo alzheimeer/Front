@@ -1,0 +1,132 @@
+body {
+        margin: 0;
+        padding: 0;
+
+        width: 100%;
+        height: 100%;
+        animation: bckCol 5s infinite;
+}
+
+.ll1 {
+        background-color: darkolivegreen;
+        color: darkred;
+        padding: .2em .3em 1em .3em;
+        border-radius: 5em 5em 0 0;
+        position: relative;
+        font-size: 40px;
+        font-weight: 800;
+        width: 5em;
+        height: 5em;
+        text-align: center;
+        /* ANIMACION */
+        animation-name: fantasma;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+}
+
+.ll2 {
+        background-color: rgb(51, 47, 107);
+        color: rgb(139, 28, 0);
+        border-radius: 5em 5em 5em 0;
+        position: relative;
+        font-size: 40px;
+        font-weight: 800;
+        width: 5em;
+        height: 5em;
+        text-align: center;
+        top: 30rem;
+        /* ANIMACION */
+        animation-name: fantasma1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: reverse;
+}
+
+
+
+@keyframes bckCol {
+        0% {
+                background-color: darkolivegreen;
+        }
+
+        100% {
+                background-color: #FF4136;
+        }
+}
+
+@keyframes fantasma {
+        0% {
+                left: 0;
+                top: 0;
+        }
+
+        10% {
+                left: 5rem;
+                top: 0rem;
+                color: #f5edf8;
+        }
+
+        30% {
+                top: 5rem;
+                left: 10rem;
+                color: rgb(148, 20, 20);
+        }
+
+        60% {
+                top: 5rem;
+                left: 20rem;
+                color: rgb(74, 22, 218);
+
+        }
+
+        70% {
+                top: 0rem;
+                left: 20rem;
+                color: rgb(148, 20, 20);
+        }
+
+        100% {
+                top: 0rem;
+                left: 0rem;
+                color: rgb(186, 214, 27);
+                opacity: 1;
+        }
+}
+
+@keyframes fantasma1 {
+        0% {
+                left: 0;
+                top: 30rem;
+        }
+
+        10% {
+                left: 20rem;
+                top: 30rem;
+                color: #f5edf8;
+        }
+
+        30% {
+                top: 50rem;
+                left: 5rem;
+                color: rgb(148, 20, 20);
+        }
+
+        60% {
+                top: 5rem;
+                left: 10rem;
+                color: rgb(74, 22, 218);
+        }
+
+        70% {
+                top: 0rem;
+                left: 10rem;
+                color: rgb(148, 20, 20);
+        }
+
+        100% {
+                top: 0rem;
+                left: 0rem;
+                color: rgb(186, 214, 27);
+        }
+}
